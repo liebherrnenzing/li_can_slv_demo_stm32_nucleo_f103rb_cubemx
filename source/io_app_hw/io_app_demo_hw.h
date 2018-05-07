@@ -19,7 +19,7 @@
 /****************************************************************************/
 
 /**
- * @file io_app_demo_hw.h 
+ * @file io_app_demo_hw.h
  * @brief header to io_app_demo_hw.h module
  * @addtogroup app
  * @{

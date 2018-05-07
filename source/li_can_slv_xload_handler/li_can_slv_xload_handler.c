@@ -111,8 +111,8 @@ lcsa_errorcode_t li_can_slv_dload_version_request_handle(li_can_slv_xload_compon
 
 	if (li_can_slv_port_string_n_cmp(dload_component->name, DLOAD_CPU1, DLOAD_CPU1_SIZE) == 0)
 	{
-		dload_component->crc = *((uint16_t *) (BOOT_NVM_CRC_START));
-		dload_component->download_id = *((uint32_t *) (BOOT_NVM_DOWNLOAD_ID_START));
+		dload_component->crc = *((uint16_t *)(BOOT_NVM_CRC_START));
+		dload_component->download_id = *((uint32_t *)(BOOT_NVM_DOWNLOAD_ID_START));
 		err = LCSA_ERROR_OK;
 	}
 #ifdef MAIN_MON
@@ -255,9 +255,9 @@ lcsa_errorcode_t li_can_slv_dload_data_block_end_handle(li_can_slv_xload_compone
 		{
 			if (xload_buffer_get_byte(&data_byte) != ERR_DLOAD_BUF_UNDERFLOW)
 			{
-//#ifdef IO_DEBUG
+				//#ifdef IO_DEBUG
 				printf("%c", data_byte);
-//#endif // #ifdef IO_DEBUG
+				//#endif // #ifdef IO_DEBUG
 			}
 		}
 #ifdef IO_DEBUG

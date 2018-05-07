@@ -146,20 +146,20 @@ lcsa_errorcode_t app_ma_w_init(uint16_t module_idx, li_can_slv_module_nr_t modnr
 	/*----------------------------------------------------------------------*/
 	/* add logical module "MA_W" to CAN										*/
 	/*----------------------------------------------------------------------*/
-    if (module_idx < APP_MA_W_NUM_OF_MODULES)
-    {
-         if (err == LCSA_ERROR_OK)
-        {
-            err = lcsa_add_module(&app_ma_w_config, modnr, &app_ma_w_can_rx_data[module_idx].rx_obj1, &app_ma_w_can_rx_data[module_idx].rx_obj2, &app_ma_w_can_rx_data[module_idx].rx_obj3, &app_ma_w_can_rx_data[module_idx].rx_obj4,
-                                &app_ma_w_can_tx_data[module_idx].tx_obj1, &app_ma_w_can_tx_data[module_idx].tx_obj2, &app_ma_w_can_tx_data[module_idx].tx_obj3, &app_ma_w_can_tx_data[module_idx].tx_obj4);
+	if (module_idx < APP_MA_W_NUM_OF_MODULES)
+	{
+		if (err == LCSA_ERROR_OK)
+		{
+			err = lcsa_add_module(&app_ma_w_config, modnr, &app_ma_w_can_rx_data[module_idx].rx_obj1, &app_ma_w_can_rx_data[module_idx].rx_obj2, &app_ma_w_can_rx_data[module_idx].rx_obj3, &app_ma_w_can_rx_data[module_idx].rx_obj4,
+			                      &app_ma_w_can_tx_data[module_idx].tx_obj1, &app_ma_w_can_tx_data[module_idx].tx_obj2, &app_ma_w_can_tx_data[module_idx].tx_obj3, &app_ma_w_can_tx_data[module_idx].tx_obj4);
 
-        }
-    }
+		}
+	}
 
-    if (err == LCSA_ERROR_OK)
-    {
-        err = lcsa_sync_set_process_time_valid_fnc(APP_MA_W_MODULE_TYPE, &app_ma_w_can_sync_get_process_time_valid);
-    }
+	if (err == LCSA_ERROR_OK)
+	{
+		err = lcsa_sync_set_process_time_valid_fnc(APP_MA_W_MODULE_TYPE, &app_ma_w_can_sync_get_process_time_valid);
+	}
 
 	if (err == LCSA_ERROR_OK)
 	{
@@ -171,10 +171,10 @@ lcsa_errorcode_t app_ma_w_init(uint16_t module_idx, li_can_slv_module_nr_t modnr
 		err = lcsa_sync_set_process_image_not_valid_cbk(APP_MA_W_MODULE_TYPE, modnr, &app_ma_w_image_not_ok_callback);
 	}
 
-    if (err == LCSA_ERROR_OK)
-    {
-        err = lcsa_is_module_valid(APP_MA_W_MODULE_TYPE, modnr, &app_ma_w_can_config_table_pos);
-    }
+	if (err == LCSA_ERROR_OK)
+	{
+		err = lcsa_is_module_valid(APP_MA_W_MODULE_TYPE, modnr, &app_ma_w_can_config_table_pos);
+	}
 
 	return (err);
 }
