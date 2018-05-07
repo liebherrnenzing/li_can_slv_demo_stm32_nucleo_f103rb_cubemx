@@ -1,29 +1,6 @@
-/Debug
-.svn
-/Release/
-/Default/
-/build_cm4/
 .settings
-/*.pydevproject
-/*.pyc
-/Debug mon/
-/Debug_tecsis_hw/
-/Debug mon tecsis hw/
-/Debug_mon_tecsis hw/
-/Debug_mon/
-/Debug tecsis/
-/Debug_mon tecsis/
-/Tecis Debug/
-/Tecsis Debug_mon/
-/Debug_Tecis/
-/Debug_Tecsis_mon/
-/Debug_Tecsis/
-/Debug_CAN1_PA11_PA12_mon/
-/Debug_CAN1_PA11_PA12/
-/Debug_main/
-/Debug_canpie_only/
-/Debug_main_openblt_update/
-/Debug_mon_openblt_update/
-/Debug Zlog/
-/source/canpie_stm32f103_canfd
+/Debug/
+/Release/
 /Configure/
+/source/canpie_stm32f103_canfd
+/.pydevproject
