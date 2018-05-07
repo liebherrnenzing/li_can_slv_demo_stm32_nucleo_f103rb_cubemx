@@ -2,7 +2,7 @@
 
 This is a basic example which shows how to use the li_can_slv stack on a NUCLEOF103RB board. The example was developed for a custom in-house baseboard but it can also be used on a normal NUCLEOF103RB board. As you can see in the project folder we have used CubeMX to generate the basic hardware layer.
 
-### Hardware Needed 
+### Hardware needed 
 
 *   NucleoF103RB Development Board
 *	A CAN Bus Break-out Board like tihis one http://copperhilltech.com/can-bus-breakout-board-5-vdc. Following pins are used for CAN.
@@ -22,7 +22,7 @@ This is a basic example which shows how to use the li_can_slv stack on a NUCLEOF
 
 ### How to start with the software? ###
 
-First of all it is necessary to install some basic tools like python, cmake and gcc. We also recommend to install eclipse because otherwise someone can not really debugging in a nice way. So follow the basic steps on this side to setup a GNU MCU Eclipse Toolchain. https://gnu-mcu-eclipse.github.io/install/
+First of all it is necessary to install some basic tools like python, cmake and gcc. We also recommend to install eclipse because otherwise someone can not really debugging in a comfortable way. So follow the basic steps on this webpage to setup a GNU MCU Eclipse Toolchain. https://gnu-mcu-eclipse.github.io/install/
 
 ##### Clone the Repository
 
