@@ -1,0 +1,28 @@
+[submodule "source/li_can_slv"]
+	path = source/li_can_slv
+	url = git@github.com:liebherrnenzing/li_can_slv.git
+	branch = master
+[submodule "source/canpie"]
+	path = source/canpie
+	url = git@github.com:liebherrnenzing/CANpie.git
+	branch = master
+[submodule "source/zf_log"]
+	path = source/zf_log
+	url = git@github.com:liebherrnenzing/zf_log.git
+	branch = master
+[submodule "source/canpie-fd_device"]
+	path = source/canpie-fd_device
+	url = git@github.com:liebherrnenzing/canpie-fd_device.git
+	branch = master
+[submodule "project/stm32-cmake"]
+	path = project/stm32-cmake
+	url = git@github.com:ObKo/stm32-cmake.git
+	branch = master
+[submodule "source/stm32_cube"]
+	path = source/stm32_cube
+	url = git@github.com:liebherrnenzing/STM32Cube_FW_F1.git
+	branch = release/1.6.1
+[submodule "source/printf"]
+	path = source/printf
+	url = git@github.com:liebherrnenzing/printf.git
+	branch = master
