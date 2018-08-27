@@ -49,10 +49,12 @@ extern "C" {
 #include "li_can_slv_xload_handler.h"
 #endif // #ifdef LI_CAN_SLV_USE_ASYNC_DOWNLOAD
 
+#include <core_cm3.h>
+
 /*--------------------------------------------------------------------------*/
 /* general definitions                                                      */
 /*--------------------------------------------------------------------------*/
-#define LI_CAN_SLV_PORT_STATIC_INLINE static INLINE
+#define LI_CAN_SLV_PORT_STATIC_INLINE __STATIC_INLINE
 
 #define li_can_slv_port_nop()	__NOP()
 

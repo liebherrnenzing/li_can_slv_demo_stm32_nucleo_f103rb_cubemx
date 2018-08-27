@@ -143,7 +143,7 @@ lcsa_errorcode_t app_init(void)
 	module_number = APP_MA_W_MODULE_NR_DEF;
 
 	err = lcsa_init(baudrate);
-	if (err != ERR_OK)
+	if (err != LCSA_ERROR_OK)
 	{
 		printf("\nlcsa_init err:%08x", err);
 	}
@@ -152,16 +152,16 @@ lcsa_errorcode_t app_init(void)
 	/*-------------------------------------------------------------------*/
 	/* Initialization of the MA_W module if the tuple is available       */
 	/*-------------------------------------------------------------------*/
-	if (err == ERR_OK)
+	if (err == LCSA_ERROR_OK)
 	{
 		err = app_ma_w_init(0, module_number);
 
-		if (err != ERR_OK)
+		if (err != LCSA_ERROR_OK)
 		{
 			lcsa_send_sensor_error(err, ERR_LVL_CRITICAL, module_number);
-			lcsa_send_sensor_error(ERR_APP_NOT_VALID, ERR_LVL_CRITICAL, module_number);
+			lcsa_send_sensor_error(ERR_MSG_CAN_ERR_NOT_DEFINED, ERR_LVL_CRITICAL, module_number);
 			err2 = lcsa_set_module_critical(APP_MA_W_MODULE_TYPE);
-			if ((err2 != ERR_OK) && (err2 != LCSA_ERROR_CONFIG_MODULE_TYPE_NOT_FOUND))
+			if ((err2 != LCSA_ERROR_OK) && (err2 != LCSA_ERROR_CONFIG_MODULE_TYPE_NOT_FOUND))
 			{
 #ifdef APP_DEBUG
 				printf("\n set critical not possible");

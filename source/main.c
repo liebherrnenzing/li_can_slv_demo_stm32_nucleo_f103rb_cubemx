@@ -213,7 +213,6 @@ void SystemClock_Config(void)
 /* CAN init function */
 static void MX_CAN_Init(void)
 {
-
 	hcan.Instance = CAN1;
 	hcan.Init.Prescaler = 16;
 	hcan.Init.Mode = CAN_MODE_NORMAL;
@@ -230,7 +229,6 @@ static void MX_CAN_Init(void)
 	{
 		_Error_Handler(__FILE__, __LINE__);
 	}
-
 }
 
 /* USART1 init function */
