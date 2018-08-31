@@ -12,39 +12,33 @@ INCLUDE_DIRECTORIES(
     ${STM32HAL_INCLUDE_DIR}
     ${CMAKE_CURRENT_SOURCE_DIR}/source
     ${CMAKE_CURRENT_SOURCE_DIR}/source/crc
-    ${CMAKE_CURRENT_SOURCE_DIR}/source/printf
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/printf       
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/zf_log/zf_log
+    
+    # canpie
     ${CMAKE_CURRENT_SOURCE_DIR}/source/canpie/source/canpie-fd
     
+    # canpie device
     # use this for our driver    
     ${CMAKE_CURRENT_SOURCE_DIR}/source/canpie-fd_device/stm32/f1/hal
 # use the next line for the microcontrol driver    
 #    ${CMAKE_CURRENT_SOURCE_DIR}/source/canpie_stm32f103_canfd
 
-    ${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv_hw
-    ${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv/source/api
-    ${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv/source/arch
-    ${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv/source/arch/canpie_adapter
-    ${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv/source/async
-    ${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv/source/config
-    ${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv/source/core
-    ${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv/source/error
-    ${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv/source/msg
-    ${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv/source/sync
-    ${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv/source/sys
-    ${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv/source/util
+	# li_can_slv
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv/include/li_can_slv/arch
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv/include/li_can_slv/arch/canpie_adapter
     
-    #${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv/source/xload
+    # li_can_slv and app user specific implementation
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv_hw
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv/include
     ${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv_xload_handler
     
-    ${CMAKE_CURRENT_SOURCE_DIR}/source/printf       
-    ${CMAKE_CURRENT_SOURCE_DIR}/source/zf_log/zf_log
-        
     ${CMAKE_CURRENT_SOURCE_DIR}/source/io_app
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/io_app_hw    
     ${CMAKE_CURRENT_SOURCE_DIR}/source/io_app_conv
-    
+
     ${CMAKE_CURRENT_SOURCE_DIR}/source/io_app_ma_w
-    
-    ${CMAKE_CURRENT_SOURCE_DIR}/source/io_app_hw
 )
 
 SET(PROJECT_SOURCES

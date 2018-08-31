@@ -41,7 +41,7 @@
 #include "stm32f1xx_hal.h"
 
 /* USER CODE BEGIN Includes */
-#include "li_can_slv_api.h"
+#include <li_can_slv/api/li_can_slv_api.h>
 
 #ifdef ZF_LOG
 #include "zf_log.h"

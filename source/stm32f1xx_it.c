@@ -36,8 +36,6 @@
 #include "stm32f1xx_it.h"
 
 /* USER CODE BEGIN 0 */
-#include "li_can_slv_api.h"
-
 uint64_t virtualTimer;
 
 /* USER CODE END 0 */

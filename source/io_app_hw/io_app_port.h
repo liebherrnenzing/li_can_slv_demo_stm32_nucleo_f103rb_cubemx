@@ -36,14 +36,12 @@ extern "C" {
 /* included files                                                           */
 /*--------------------------------------------------------------------------*/
 #include "io_app_config.h"
-#include "li_can_slv_api.h"
+#include <li_can_slv/api/li_can_slv_api.h>
 //#include "io_intrins.h"
 #include <stdint.h>
 #ifdef TUPLE
 #include "io_tuple.h"
 #endif // #ifdef TUPLE
-
-#include "io_can_sync.h"
 
 #include "li_can_slv_port.h"
 
