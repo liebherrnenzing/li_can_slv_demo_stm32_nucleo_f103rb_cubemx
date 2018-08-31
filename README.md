@@ -68,5 +68,5 @@ Now make the program use the make.exe from the build tools:
 
 ##### Import into Eclipse
 
-At this point it is possible to import the project into the GNU MCU Eclipse Toolchain you have installed at the beginning.
+At this point it is possible to import the project into the GNU MCU Eclipse Toolchain you have installed at the beginning. But you must modify the Build Command. So navigate to properties and change the path at C/C++ Build, Builder Settings, Build command.
 
