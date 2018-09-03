@@ -15,11 +15,11 @@ extern "C"
 #endif
 
 #if 1
-//#define ZF_LOG_MESSAGE_CTX_FORMAT \
-//     (F_INIT((unsigned get_system_tick(); )), \
-//      F_UINT(5, get_system_tick()), S(ZF_LOG_DEF_DELIMITER))
+#define ZF_LOG_MESSAGE_CTX_FORMAT \
+     (F_INIT((unsigned get_system_tick(); )), \
+      F_UINT(5, get_system_tick()), S(ZF_LOG_DEF_DELIMITER))
 
-#define ZF_LOG_MESSAGE_CTX_FORMAT (S(ZF_LOG_DEF_DELIMITER))
+//#define ZF_LOG_MESSAGE_CTX_FORMAT (S(ZF_LOG_DEF_DELIMITER))
 
 //#define ZF_LOG_MESSAGE_SRC_FORMAT	(FUNCTION, S(ZF_LOG_DEF_DELIMITER))
 //#define ZF_LOG_MESSAGE_SRC_FORMAT	(FUNCTION, S("@"), FILENAME, S(":"), FILELINE, S(ZF_LOG_DEF_DELIMITER))

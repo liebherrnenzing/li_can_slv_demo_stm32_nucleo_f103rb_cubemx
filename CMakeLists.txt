@@ -106,8 +106,8 @@ SET(PROJECT_SOURCES
 )
 
 add_definitions(-DSTM32F103xB)
-#add_definitions(-DZF_LOG)
-#add_definitions(-DZF_LOG_CONFIG)
+add_definitions(-DZF_LOG)
+add_definitions(-DZF_LOG_CONFIG)
 add_definitions(-DPRINTF_CONFIG)
 #add_definitions(-DCP_DEBUG=1)
 add_definitions(-DCP_DEVICE_TX_STRATEGY_ROLL)

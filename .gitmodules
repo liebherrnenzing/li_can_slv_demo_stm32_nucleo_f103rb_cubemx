@@ -1,7 +1,7 @@
 [submodule "source/li_can_slv"]
 	path = source/li_can_slv
 	url = git@github.com:liebherrnenzing/li_can_slv.git
-	branch = master
+	branch = dev
 [submodule "source/canpie"]
 	path = source/canpie
 	url = git@github.com:liebherrnenzing/CANpie.git
