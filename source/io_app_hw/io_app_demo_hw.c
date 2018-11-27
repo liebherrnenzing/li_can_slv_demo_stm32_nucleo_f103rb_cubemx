@@ -140,7 +140,9 @@ lcsa_errorcode_t app_init(void)
 	baudrate = LCSA_BAUD_RATE_250K;
 	// baudrate = LCSA_BAUD_RATE_500k;
 	// baudrate = LCSA_BAUD_RATE_1M;
+#ifdef APP_MA_W
 	module_number = APP_MA_W_MODULE_NR_DEF;
+#endif
 
 	err = lcsa_init(baudrate);
 	if (err != LCSA_ERROR_OK)

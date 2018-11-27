@@ -130,14 +130,16 @@ lcsa_errorcode_t app_ma_w_init(uint16_t module_idx, li_can_slv_module_nr_t modnr
 	app_ma_w_can_tx_data[0].tx_obj2.word1 = 0x21;
 	app_ma_w_can_tx_data[0].tx_obj2.word2 = 0x22;
 	app_ma_w_can_tx_data[0].tx_obj2.word3 = 0x23;
-	app_ma_w_can_tx_data[0].tx_obj3.word0 = 30;
-	app_ma_w_can_tx_data[0].tx_obj3.word1 = 31;
-	app_ma_w_can_tx_data[0].tx_obj3.word2 = 32;
-	app_ma_w_can_tx_data[0].tx_obj3.word3 = 33;
-	app_ma_w_can_tx_data[0].tx_obj4.word0 = 40;
-	app_ma_w_can_tx_data[0].tx_obj4.word1 = 41;
-	app_ma_w_can_tx_data[0].tx_obj4.word2 = 42;
-	app_ma_w_can_tx_data[0].tx_obj4.word3 = 43;
+
+	app_ma_w_can_tx_data[0].tx_obj3.word0 = 0x30;
+	app_ma_w_can_tx_data[0].tx_obj3.word1 = 0x31;
+	app_ma_w_can_tx_data[0].tx_obj3.word2 = 0x32;
+	app_ma_w_can_tx_data[0].tx_obj3.word3 = 0x33;
+
+	app_ma_w_can_tx_data[0].tx_obj4.word0 = 0x40;
+	app_ma_w_can_tx_data[0].tx_obj4.word1 = 0x41;
+	app_ma_w_can_tx_data[0].tx_obj4.word2 = 0x42;
+	app_ma_w_can_tx_data[0].tx_obj4.word3 = 0x43;
 #else
 	app_port_memory_set(&app_ma_w_can_rx_data, 0, sizeof(app_ma_w_can_rx_data_t) * APP_MA_W_NUM_OF_MODULES);
 	app_port_memory_set(&app_ma_w_can_tx_data, 0, sizeof(app_ma_w_can_tx_data_t) * APP_MA_W_NUM_OF_MODULES);
