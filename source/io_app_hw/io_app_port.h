@@ -36,38 +36,17 @@ extern "C" {
 /* included files                                                           */
 /*--------------------------------------------------------------------------*/
 #include "io_app_config.h"
-#include <li_can_slv/api/li_can_slv_api.h>
-//#include "io_intrins.h"
 #include <stdint.h>
 #ifdef TUPLE
 #include "io_tuple.h"
 #endif // #ifdef TUPLE
-
-#include "li_can_slv_port.h"
 
 #ifdef TESTSYS_SYSTEM
 #include "io_testsys.h"
 #include "io_var.h"
 #endif // #ifdef TESTSYS_SYSTEM
 
-
-
-//#include "li_can_slv_api.h"
-//#include "li_can_slv_port.h"
-//#include <stdint.h>
-//#include <stddef.h>
-//#include <stdio.h>
-//#include <stdlib.h>
-//#include <string.h>
-//#ifdef IO_DEBUG
-//#include "io_debug.h"
-//#endif // #ifdef IO_DEBUG
-//
-//#include "io_intrins.h"
-//
-//#if defined (APP_MAIN) || defined (APP_MON)
-//#include "io_app_config_main_mon.h"
-//#endif
+#include "li_can_slv.h"
 
 /*--------------------------------------------------------------------------*/
 /* general definitions                                                      */

@@ -8,13 +8,13 @@ extern "C"
 
 #define ZF_LOG_BUF_SZ 32
 
-#if 0
+#if 1
 #define ZF_LOG_MESSAGE_CTX_FORMAT \
      (F_INIT((unsigned get_system_tick(); )), \
       F_UINT(5, get_system_tick()), S(" "), LEVEL, S(" "))
 #endif
 
-#if 1
+#if 0
 #define ZF_LOG_MESSAGE_CTX_FORMAT \
      (F_INIT((unsigned get_system_tick(); )), \
       F_UINT(5, get_system_tick()), S(ZF_LOG_DEF_DELIMITER))

@@ -41,7 +41,7 @@
 #include "stm32f1xx_hal.h"
 
 /* USER CODE BEGIN Includes */
-#include <li_can_slv/api/li_can_slv_api.h>
+#include "li_can_slv.h"
 
 #ifdef ZF_LOG
 #include "zf_log.h"
@@ -319,6 +319,7 @@ void HAL_SYSTICK_Callback(void)
 {
 	static uint32_t timer = 0;
 
+	virtualTimer++;
 	timer++;
 	if (timer == 5)
 	{

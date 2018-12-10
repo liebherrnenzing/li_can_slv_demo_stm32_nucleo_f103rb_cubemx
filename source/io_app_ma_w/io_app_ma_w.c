@@ -32,6 +32,9 @@
 #include "io_app_convc.h"
 
 #include "printf.h"
+#ifdef ZF_LOG
+#include "zf_log.h"
+#endif // #ifdef ZF_LOG
 
 /*--------------------------------------------------------------------------*/
 /* general definitions (private/not exported)                               */
@@ -356,6 +359,10 @@ lcsa_errorcode_t app_ma_w_process_output(void)
 
 	if (cnt >= 100)
 	{
+
+#ifdef ZF_LOG
+		ZF_LOGI("counting zf_log");
+#endif
 		printf("\n.. counting ..");
 
 		cnt = 0;

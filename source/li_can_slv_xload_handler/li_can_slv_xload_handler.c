@@ -29,8 +29,6 @@
 /* include files                                                            */
 /*--------------------------------------------------------------------------*/
 #include "li_can_slv_xload_handler.h"
-#include "li_can_slv_xload_buffer.h"
-#include "li_can_slv_port.h"
 
 #ifdef DEBUG_DLOAD
 #include "io_debug.h"
@@ -79,7 +77,7 @@
 /*--------------------------------------------------------------------------*/
 /* global variables (private/not exported)                                  */
 /*--------------------------------------------------------------------------*/
-static uint8_t tmp_data_for_upload[] = "Some text for Testing!";
+static uint8_t tmp_data_for_upload[] = {"Some text for Testing!"};
 
 /*--------------------------------------------------------------------------*/
 /* function prototypes (private/not exported)                               */

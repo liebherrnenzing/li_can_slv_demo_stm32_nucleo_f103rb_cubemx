@@ -35,7 +35,6 @@ extern "C" {
 /*--------------------------------------------------------------------------*/
 /* included files                                                           */
 /*--------------------------------------------------------------------------*/
-#include <li_can_slv/api/li_can_slv_api.h>
 #include "stm32f1xx_hal.h"
 
 #ifdef LI_CAN_SLV_USE_ASYNC_TUNNEL

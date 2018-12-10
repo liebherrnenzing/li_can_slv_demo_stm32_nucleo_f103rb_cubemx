@@ -23,8 +23,8 @@ INCLUDE_DIRECTORIES(
     ${CMAKE_CURRENT_SOURCE_DIR}/source/canpie-fd_device/stm32/f1/hal
 # use the next line for the microcontrol driver    
 #    ${CMAKE_CURRENT_SOURCE_DIR}/source/canpie_stm32f103_canfd
-
-	# li_can_slv
+    # li_can_slv
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv
     ${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv/include
     ${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv/include/li_can_slv/arch
     ${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv/include/li_can_slv/arch/canpie_adapter
