@@ -240,5 +240,4 @@ static void process_req_whole_image_ok_callback(void)
 	printf("\nprocess req whole image okay");
 #endif
 }
-
 /** @} */

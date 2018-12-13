@@ -21,7 +21,7 @@ INCLUDE_DIRECTORIES(
     # canpie device
     # use this for our driver    
     ${CMAKE_CURRENT_SOURCE_DIR}/source/canpie-fd_device/stm32/f1/hal
-# use the next line for the microcontrol driver    
+    # use the next line for the microcontrol driver    
 #    ${CMAKE_CURRENT_SOURCE_DIR}/source/canpie_stm32f103_canfd
     # li_can_slv
     ${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv
@@ -35,9 +35,9 @@ INCLUDE_DIRECTORIES(
     ${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv_xload_handler
     
     ${CMAKE_CURRENT_SOURCE_DIR}/source/io_app
-    ${CMAKE_CURRENT_SOURCE_DIR}/source/io_app_hw    
     ${CMAKE_CURRENT_SOURCE_DIR}/source/io_app_conv
-
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/io_app_hw    
+    
     ${CMAKE_CURRENT_SOURCE_DIR}/source/io_app_ma_w
 )
 
@@ -46,17 +46,17 @@ SET(PROJECT_SOURCES
     ${CMAKE_CURRENT_SOURCE_DIR}/source/newlib.c
     ${CMAKE_CURRENT_SOURCE_DIR}/source/stm32f1xx_it.c
     ${CMAKE_CURRENT_SOURCE_DIR}/source/stm32f1xx_hal_msp.c
-        
+    
     ${CMAKE_CURRENT_SOURCE_DIR}/source/printf/printf.c
-
+    
     ${CMAKE_CURRENT_SOURCE_DIR}/source/canpie/source/canpie-fd/cp_msg.c
     ${CMAKE_CURRENT_SOURCE_DIR}/source/canpie/source/canpie-fd/cp_fifo.c
-# use this for our driver
+    # use this for our driver
     ${CMAKE_CURRENT_SOURCE_DIR}/source/canpie-fd_device/stm32/hal/stm32_canpie-fd.c
-# use the next line for the microcontrol driver
-#	${CMAKE_CURRENT_SOURCE_DIR}/source/canpie_stm32f103_canfd/stm32f103_canfd.c
-     
-     
+    # use the next line for the microcontrol driver
+#    ${CMAKE_CURRENT_SOURCE_DIR}/source/canpie_stm32f103_canfd/stm32f103_canfd.c
+
+	#li_can_slv
     ${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv/source/api/li_can_slv_api.c
 
     ${CMAKE_CURRENT_SOURCE_DIR}/source/li_can_slv/source/arch/canpie_adapter/io_can_async_hw.c
@@ -97,11 +97,8 @@ SET(PROJECT_SOURCES
     
     ${CMAKE_CURRENT_SOURCE_DIR}/source/io_app/io_app_module_change.c
     ${CMAKE_CURRENT_SOURCE_DIR}/source/io_app_conv/io_app_convc.c
-    
     ${CMAKE_CURRENT_SOURCE_DIR}/source/io_app_ma_w/io_app_ma_w.c
-        
     ${CMAKE_CURRENT_SOURCE_DIR}/source/io_app_hw/io_app_demo_hw.c
-    
     ${CMAKE_CURRENT_SOURCE_DIR}/source/zf_log/zf_log/zf_log.c
 )
 
@@ -114,7 +111,6 @@ add_definitions(-DCP_DEVICE_TX_STRATEGY_ROLL)
 
 # add this for the microcontrol driver
 #add_definitions(-DDISABLE_HAL_CAN_IRQ)
-
 
 SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -gdwarf-4 -g3 -O0")
 
